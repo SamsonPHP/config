@@ -1,5 +1,5 @@
 <?php
-namespace samsonos\config;
+namespace samsonphp\config;
 
 use samson\core\Event;
 
