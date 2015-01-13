@@ -1,5 +1,5 @@
 {
-	"name":"samsonos/php_config",
+	"name":"samsonphp/config",
     "description": "SamsonPHP configuration system",
     "keywords": ["file system", "samsonphp"],
     "authors":[
@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "samsonos/php_event": "1.*"
+        "samsonphp/event": "1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*"
