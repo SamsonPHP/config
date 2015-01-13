@@ -5,7 +5,7 @@
  * Date: 06.01.2015
  * Time: 16:59
  */
-namespace samsonos\config;
+namespace samsonphp\config;
 
 use samson\core\Event;
 
