@@ -10,7 +10,7 @@ use samsonphp\config\Scheme;
  */
 class SchemeTest extends \PHPUnit_Framework_TestCase
 {
-    /** @var  \samsonos\config\Manager */
+    /** @var  \samsonphp\config\Manager */
     protected $manager;
 
     /** @var  Scheme */
