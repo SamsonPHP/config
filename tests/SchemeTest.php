@@ -1,8 +1,8 @@
 <?php
 namespace tests;
 
-use samsonos\config\Manager;
-use samsonos\config\Scheme;
+use samsonphp\config\Manager;
+use samsonphp\config\Scheme;
 
 /**
  * Created by Vitaly Iegorov <egorov@samsonos.com>
