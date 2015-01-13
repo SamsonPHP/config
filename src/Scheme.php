@@ -1,7 +1,7 @@
 <?php
 namespace samsonphp\config;
 
-use samson\core\Event;
+use samsonphp\event\Event;
 
 /**
  * Generic SamsonPHP core configuration system

@@ -7,7 +7,7 @@
  */
 namespace samsonphp\config;
 
-use samson\core\Event;
+use samsonphp\event\Event;
 
 /**
  * Configuration scheme manager
