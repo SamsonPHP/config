@@ -11,7 +11,7 @@ use samsonphp\event\Event;
 
 /**
  * Configuration scheme manager
- * @package samsonos\config
+ * @package samsonphp\config
  */
 class Manager
 {

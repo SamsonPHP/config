@@ -7,7 +7,7 @@
  */
 namespace project\deploy;
 
-class OtherModuleConfig extends \samsonos\config\Entity
+class OtherModuleConfig extends \samsonphp\config\Entity
 {
     public $parameterString = '2';
     public $parameterInt = 2;

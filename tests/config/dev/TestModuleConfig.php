@@ -7,7 +7,7 @@
  */
 namespace project\dev;
 
-class TestModuleConfig extends \samsonos\config\Entity
+class TestModuleConfig extends \samsonphp\config\Entity
 {
     public $parameterString = '2';
     public $parameterInt = 2;

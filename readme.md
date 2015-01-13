@@ -12,7 +12,7 @@ OOP based configuration system. This approach uses all abilities of PHP OOP for 
 
 ## Configuration scheme
 Your project can have any amount of possible configurations, which is usually used for different environments, such as *development, test, deploy, production* stages,
-for this purposes we have created ```samsonos\config\Scheme```, each of them corresponds to specific environment. In practice you should have _base configuration folder_,
+for this purposes we have created ```Scheme```, each of them corresponds to specific environment. In practice you should have _base configuration folder_,
 by default it is located at ```app/config``` folder. 
 
 ### Global configuration 
@@ -25,12 +25,12 @@ configuration entity will be used for it instead if present.
 To create new configuration environment you should create new folder in your _base configuration folder_(by default it located at ```app/config```), for example we want to create ```production``` environment, new folder path would be: ```app/config/production/```. And all entity configuration classes there would correspond to your ```production``` configuration scheme, which will be created automatically.
 
 ## Entity configuration
-To configure your project modules\objects  - you should use classes, for correct finding this classes among others, we force you to extend our base entity configuration class ```samsonos\config\Entity``` :
+To configure your project modules\objects  - you should use classes, for correct finding this classes among others, we force you to extend our base entity configuration class ```Entity``` :
 
 ```php
 namespace project;
 
-class entityIDConfig extends samsonos\config\Entity
+class entityIDConfig extends samsonphp\config\Entity
 {    
 }
 ```
@@ -49,7 +49,7 @@ should have namespace: ```[ParentNamespace]\[EnvironmentName]```, if we extend o
 ```php
 namespace project\production;
 
-class entityIDConfig extends samsonos\config\Entity
+class entityIDConfig extends samsonphp\config\Entity
 {
     public $parameter = 'value';
 }
@@ -64,7 +64,7 @@ limitation is that they have to be ```public``` accessible:
 ```php
 namespace project;
 
-class entityIDConfig extends samsonos\config\Entity
+class entityIDConfig extends samsonphp\config\Entity
 {    
     public $stringParameter = 'I am a string';
     public $integerParameter = 1123;
@@ -81,7 +81,7 @@ can make any possible operation.
 ```php
 namespace project;
 
-class entityIDConfig extends samsonos\config\Entity
+class entityIDConfig extends samsonphp\config\Entity
 {    
     public $stringParameter = 'I am a string';
     public $integerParameter = 1123;
@@ -111,18 +111,18 @@ class entityIDConfig extends project\entityIDConfig
 ```
 
 ## Configuration manager
-All project modules/objects configuration is processed via configuration manager ```samsonos\config\Manager```, you must create instance of it, you must specify
+All project modules/objects configuration is processed via configuration manager ```samsonphp\config\Manager```, you must create instance of it, you must specify
 only one parameter ```Path to base configuration folder```, for initialization of manager you should use ```init()``` method, this methods are specially separated
 to give ability to load entity configuration classes as you wish.  
 ```php 
-$manager = new \samsonos\config\Manager('.../path/to/base/folder');
+$manager = new \samsonphp\config\Manager('.../path/to/base/folder');
 $manager->init();
 ```
 
 ### Loading entity configuration classes
-We have created special static method for loading entity configuration ```samsonos\config\Manager::import($path)```, this method is used internally when configuration scheme is being created or loaded, for this tasks you should use ```init(path)```:
+We have created special static method for loading entity configuration ```samsonphp\config\Manager::import($path)```, this method is used internally when configuration scheme is being created or loaded, for this tasks you should use ```init(path)```:
 ```php 
-$manager = new \samsonos\config\Manager();
+$manager = new \samsonphp\config\Manager();
 $manager->init('.../path/to/base/folder');
 ```
 
@@ -133,7 +133,7 @@ If you want to change current active manager configuration use should use ```cha
 ### Load schemes from different locations
 If you have separate base configuration folders with different configurations, for example one project inside another, and inner project want to take some configurations from parent object, you can load configuration from other location:
 ```php 
-$manager = new \samsonos\config\Manager();
+$manager = new \samsonphp\config\Manager();
 $manager->init('.../path/to/base/folder');
 $manager->init('.../path/to/OTHER/folder');
 ```
