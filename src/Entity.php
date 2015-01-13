@@ -3,7 +3,7 @@
  * Created by Vitaly Iegorov <egorov@samsonos.com>
  * on 15.09.14 at 11:01
  */
-namespace samsonos\config;
+namespace samsonphp\config;
 
 /**
  * Generic object configuration class
