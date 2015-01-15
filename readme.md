@@ -1,7 +1,7 @@
 # SamsonPHP Configuration system
 
 [![Latest Stable Version](https://poser.pugx.org/samsonphp/config/v/stable.svg)](https://packagist.org/packages/samsonphp/config) 
-[![Build Status](https://travis-ci.org/SamsonPHP/config.svg?branch=1.0.11)](https://travis-ci.org/SamsonPHP/config)
+[![Build Status](https://travis-ci.org/SamsonPHP/config.svg?branch=master)](https://travis-ci.org/SamsonPHP/config)
 [![Code Coverage](https://scrutinizer-ci.com/g/samsonphp/config/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/samsonphp/config/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/samsonphp/config/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/samsonphp/config/?branch=master)
 [![Stories in Ready](https://badge.waffle.io/samsonphp/config.png?label=ready&title=Ready)](https://waffle.io/samsonphp/config)
